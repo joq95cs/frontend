@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+
+		/*for(var i=0; i<10; i++) {
+
+			if(i == 5) continue;
+
+			document.write(i + " HOLA<br>");
+
+			if(i == 8) break;
+
+		} //Funciona como cualquier ciclo for, pero considerando las variables de tipado dinámico
+
+		for(var i=0; i<5; i++) document.write(i + " ADIÓS<br>");
+
+			*/
+
+		var personas = ['Kimera', 'Patito', 'Madonna', 'Sansón'];
+
+		for(p in personas) {//p guarda el índice, no cada objeto del arreglo
+
+			document.write(personas[p]);
+			document.write("<br>");
+
+		} //No es for each
+
+	</script>
+	
+</body>
+</html>

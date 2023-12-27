@@ -1,0 +1,47 @@
+* {
+
+	padding: 0;
+	margin: 0;
+
+}
+
+body {
+
+	background: #f2f2f2;
+
+}
+
+.caja {
+
+	width: 200px;
+	height: 200px;
+	background: #0e6ba8;
+	margin: 20px;
+
+	float: left;
+
+}
+
+.posicionada {
+
+	background: #6695e8;
+	/*position: absolute;
+	top: -50px; Relative respeta el espacio, absolute no
+	right: 50px;
+	left: 200px;
+	bottom: 50px;*/
+
+
+}
+
+/*.padre {
+
+	position: relative;
+	margin: 20px;
+	background: #2e294c;
+	width: 500px;
+	height: 500px;	
+
+}*/
+
+/*Cuando el elemento padre tiene es relative, y su hijo absolute, el hijo puede ser posicionado con respecto al padre*/

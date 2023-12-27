@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn-iniciar">Presiona</button>
+    <button id="btn-detener">Detener</button>
+
+    <script>
+
+        function saludo() {
+
+            alert("Hola");
+        }
+
+        /*var tiempo = setTimeout(saludo, 3000);
+        clearTimeout(tiempo);*/
+        
+        /*document.getElementById("btn-iniciar").addEventListener("click", function() { //Espera 3 segundos para ejecutar la función
+
+            setTimeout(saludo, 3000);
+
+        });*/
+
+        var intervalo = setInterval(saludo, 3000);
+        //clearInterval(intervalo);
+
+        document.getElementById("btn-detener").addEventListener("click", function() {
+
+            clearInterval(intervalo);
+        });
+    </script>
+    
+</body>
+</html>

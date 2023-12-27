@@ -1,0 +1,27 @@
+/*INICIO DE GENERALES*/
+
+* {
+
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+
+    width: 700px;
+    margin: 20px;
+}
+
+header, .main, aside, footer {
+
+    padding: 20px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+
+        .joq-nav a{
+
+            color: white;
+            padding: 15px;
+        }
+
+        .joq-nav a:hover, .joq-nav .active {
+
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .seccion {
+
+            margin-bottom: 1000px;
+        }
+
+        .seccion .columna {
+
+            padding-top: 70px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#joq-nav">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+
+                <div class="joq-nav" id="joq-nav">
+
+                    <ul class="joq-nav nav fixed-top navbar-inverse bg-primary">
+
+                        <li class="nav-item">
+
+                            <a href="#seccion1" class="nav-link">Sección 1</a>
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="#seccion2" class="nav-link">Sección 2</a>
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="#seccion3" class="nav-link">Sección 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row seccion" id="seccion1">
+
+            <div class="col-12 columna">
+
+                <h2>Sección 1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore temporibus natus possimus assumenda est rem error nesciunt modi amet ab, excepturi quas sunt unde, quo provident molestias dolorem voluptate aliquid!</p>
+            </div>
+        </div>
+
+        <div class="row seccion" id="seccion2">
+
+            <div class="col-12 columna">
+
+                <h2>Sección 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore temporibus natus possimus assumenda est rem error nesciunt modi amet ab, excepturi quas sunt unde, quo provident molestias dolorem voluptate aliquid!</p>
+            </div>
+        </div>
+
+        <div class="row seccion" id="seccion3">
+
+            <div class="col-12 columna">
+
+                <h2>Sección 3</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore temporibus natus possimus assumenda est rem error nesciunt modi amet ab, excepturi quas sunt unde, quo provident molestias dolorem voluptate aliquid!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

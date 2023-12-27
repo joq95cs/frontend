@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row mt-3">
+
+            <div class="col">
+
+                <button class="btn btn-primary" data-toggle="modal" data-target="#joq-modal">Abrir modal</button>
+                <div class="modal fade" id="joq-modal" tabindex="-1" role="dialog" aria-labelledby="joq-modal" aria-hidden="true">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title">Título de la ventana</h5>
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <h2>Hola mundo</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iure magnam numquam ullam corrupti tempore non impedit repellat qui minus, laudantium quo fugiat sit facilis consequuntur labore, modi vero doloremque!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-success" data-toggle="modal" data-target="#joq-modal-grid">Abrir modal</button>
+                <div class="modal fade" id="joq-modal-grid" tabindex="-1" role="dialog" aria-labelledby="joq-modal-grid" aria-hidden="true">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title">Título de la ventana con grid</h5>
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="container-fluid">
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-md-6">
+
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi corrupti voluptatum debitis cum magni nam quis ratione amet corporis, minus deleniti nulla dicta dolores qui tenetur eos officia cumque.</p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi corrupti voluptatum debitis cum magni nam quis ratione amet corporis, minus deleniti nulla dicta dolores qui tenetur eos officia cumque.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                
+                                <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

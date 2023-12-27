@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" name="formulario" id="formulario" >
+        
+        <input type="text" name="nombre" placeholder="nombre">
+
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="sexo" id="hombre">
+
+        <label for="mujer">Mujer</label>
+        <input type="radio" name="sexo" id="mujer">
+
+        <label for="terminos">Términos</label>
+        <input type="checkbox" name="terminos" id="terminos">
+
+        <input type="submit" value="Enviar datos">
+    </form>
+
+    <script>
+
+        //var form = document.getElementsByName("formulario")[0];
+
+        var formulario = document.getElementById("formulario");
+        var nombre = formulario.nombre;
+        var sexo = formulario.sexo;
+        var terminos = formulario.terminos;
+
+        function validar(e) {
+
+            var enviar = 1;
+
+            if(nombre.value > 20) {
+
+                alert("Límite de caracteres excedido");
+                enviar *= 0;
+
+            } else if(nombre.value == "") {
+
+                alert("Ingresa un nombre");
+                enviar *= 0;
+
+            } else {enviar *= 1;}
+
+            if(!sexo[0].checked && !sexo[1].checked) {
+
+                alert("Selecciona un sexo");
+                enviar *= 0;
+
+            } else {enviar *= 1;}
+
+            if(!terminos.checked) {
+
+                alert("Acepta los términos");
+                enviar *= 0;
+            } else {enviar *= 1;}
+
+            if(enviar == 0) {e.preventDefault()}; //Evita que se envíe el formulario}
+            
+        }
+
+        formulario.addEventListener("submit", validar);
+    </script>
+    
+</body>
+</html>

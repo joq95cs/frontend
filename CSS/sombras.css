@@ -1,0 +1,20 @@
+/*No se recomienda poner sombras al texto*/
+
+.texto {
+
+	/*text-shadow: 2px 5px 10px #000;*/
+
+	color: #fff;
+	text-shadow: 2px 0px 10px blue;
+}
+
+.caja {
+
+	width: 200px;
+	height: 200px;
+	background: #f79256;
+	box-shadow: 0 5px 3px rgba(0, 0, 0, 0.5);
+
+	/*-webkit-box-shadow
+	-moz-box-shadow	*/
+}

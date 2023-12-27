@@ -1,0 +1,14 @@
+$colorPrimario: #f9a03f;
+$fuentePrimaria: Georgia;
+
+//Las variables sirven para guardar valores que se repiten mucho en el archivo, guardan valores de propiedades
+
+.articulo{
+    .titulo {
+        color: $colorPrimario;
+    }
+    p {
+        color: $colorPrimario;
+        font-family: $fuentePrimaria;
+    }
+}

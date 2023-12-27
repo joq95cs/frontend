@@ -1,0 +1,55 @@
+/* Comentario */
+
+/** { color: red; } Selector UNIVERSAL*/
+
+/*h1 {
+
+	color: blue; Selector de ETIQUETA
+
+}*/
+
+h1, h2, h3 {
+
+	color: orange;
+
+}
+
+div p { /*Selector DESCENDENTE*/
+
+	font-size: 20px;
+	color: gray;
+
+}
+
+div article p {
+
+	 color: yellow;
+
+}
+
+div p a {
+
+	color: red;
+
+}
+
+.grande {
+
+	font-size: 28px;
+
+}
+
+#enorme {
+
+	font-size: 40px;
+
+}
+
+/*Es recomendable usar selectores de clases, y no de ID*/
+/*ID es más util para Javascript, clase para CSS*/
+
+.main article p {
+
+	color: pink;
+
+}

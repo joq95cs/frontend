@@ -1,0 +1,1 @@
+alert("Hola, soy JS de un archivo externo");

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var persona1 = { //Se declara el objeto directamente sin indicar su clase
+
+            nombre: "Joqsan", edad: 25, pais: "México",
+            bio: function() {
+
+                return this.nombre + ", tiene " + this.edad + " años, y nació en " + this.pais + "...";
+            }
+        };
+
+        var persona2 = {
+
+            nombre: "So Anna", edad: 19, pais: "Francia",
+            bio: function() {
+
+                return this.nombre + ", tiene " + this.edad + " años, y nació en " + this.pais + "..."; //Requieren el this
+            }
+        };
+
+        //Es como crear objetos anónimos, sin ser instancias de una clase plantilla
+
+        //document.write(persona1.bio());
+
+        /*var bio = function() {
+
+            return this.nombre + ", tiene " + this.edad + " años, y nació en " + this.pais + "...";
+        }*/
+
+        function persona(nombre, edad, pais) { //Función constructora de objetos
+
+            this.nombre = nombre;
+            this.edad = edad;
+            this.pais = pais;
+
+            this.bio = function() {
+
+                return this.nombre + ", tiene " + this.edad + " años, y nació en " + this.pais + "...";
+
+            }
+        }
+
+        var persona3 = new persona("Kimera", 52, "Sim Nation");
+        document.write(persona3.bio());
+    </script>
+    
+</body>
+</html>

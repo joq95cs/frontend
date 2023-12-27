@@ -1,0 +1,45 @@
+/*INICIO DE GENERALES*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.contenedor {
+  width: 700px;
+  margin: 20px; }
+
+header, .main, aside, footer {
+  padding: 20px; }
+
+/*INICIO DE GENERALES*/
+header {
+  background: #0d2c44;
+  color: #fff; }
+
+/*INICIO DE MAIN*/
+.main {
+  background: #fff;
+  width: 70%;
+  float: left; }
+
+/*INICIO DE ASIDE*/
+aside {
+  background: #b81f35;
+  color: #fff;
+  width: 30%;
+  float: left; }
+
+/*INICIO DE FOOTER*/
+footer {
+  clear: both;
+  width: 100%;
+  background: #0d2c44;
+  color: #fff; }
+
+/*# sourceMappingURL=layout.css.map */

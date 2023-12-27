@@ -1,0 +1,65 @@
+* {
+
+	padding: 0;
+	margin: 0;
+
+}
+
+body {
+
+	background: #f2f2f2;
+	font-family: Arial;
+
+}
+
+.cajaPadre {
+
+	background: red;
+	width: 700px;
+
+	overflow: hidden; /*Permite que la caja padre abarque los contenidos correctamente*/
+
+}
+
+.caja {
+
+	color: white;
+	font-size: 20px;
+	width: 200px;
+	height: 200px;
+	background: green;
+	margin: 20px;
+
+
+}
+
+.uno {
+
+	float: left;
+
+}
+
+.dos {
+
+	float: right;
+
+}
+
+/*.clear { /*Se tiene que agregar siempre después de los elementos flotados
+
+	/*clear: both;
+
+}*/
+
+.articulo {
+
+	width: 800px;
+	background: #ccc;
+
+}
+
+.articulo img {
+
+	float: left;
+
+}

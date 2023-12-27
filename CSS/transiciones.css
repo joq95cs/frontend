@@ -1,0 +1,19 @@
+.caja {
+
+	width: 200px;
+	height: 200px;
+	background: #21295c;
+
+	transition: all 5s ease; /*0.e es el valor más usado*/
+	/*transition-delay: 2s;*/
+
+	/*ease, linear, ease-in, ease-out, ease-in-out*/
+}
+
+.caja:hover {
+
+	background: #9eb3c2;
+	width: 400px;
+	height: 400px;
+	transform: rotate(180deg);
+}

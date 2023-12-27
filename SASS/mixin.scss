@@ -1,0 +1,31 @@
+/*@mixin colores($fondo, $articulo) { //Son prácticamente funciones
+
+    body {
+
+        background: $fondo;
+    }
+
+    .articulo {
+
+        background: $articulo;
+    }
+}
+
+@include colores(#ff8000, #fff);
+
+*/
+
+@mixin borde($pixeles) {
+
+    border-radius: $pixeles;
+    -moz-border-radius: $pixeles;
+    -webkit-border-radius: $pixeles;
+    -ms-boder-radius: $pixeles;
+    -o-border-radius: $pixeles;
+}
+
+article {
+
+    @include borde(20px);
+    background: rgba(#ff8000, 0.5); //Permite poner el valor en hex
+}

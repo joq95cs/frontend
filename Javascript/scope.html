@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+
+		function saludo() {
+
+			var texto = "Hola"; //Variable local
+			console.log(texto);
+		}
+
+		//saludo();
+
+		function hola() { //mensaje puede ver variables de hola, pero hola no puede ver las de mensaje
+
+			var texto = "Hola";
+
+			function mensaje() { //Se pueden anidar funciones
+
+				//var texto = "Modificado";
+				console.log(texto); //Se pueden acceder a las variables de la función padre
+			} //Solo se puede acceder desde dentro hacia afuera
+
+			mensaje();
+		}
+
+		//hola();
+
+		var texto = "Hola a todos"; //Variable global
+
+		function saluda() {
+
+			texto = "Ki"; //Usa la global
+
+			//var texto = "Holaaaaa" //Sobreescribe la global y usa la versión local
+
+			console.log(texto);
+		}
+
+		//saluda();
+
+		function adios() {
+
+			msg = "Adiós";
+		}
+
+		//adios();
+
+		//console.log(msg);
+
+		//Cuando una función se ejecuta, y existe una variable sin la palabra var, será agregada a las variables globales
+
+		(function() {
+
+			var msg = "Hola locos"; //No se puede ver desde afuera
+
+			alert("Qué hay!!!");
+
+			alert(msg);
+
+		}());
+
+		//alert(msg);
+
+		/*function test() {
+
+			numero = 25;
+
+		}
+
+		test();
+
+		alert(numero);*/
+
+
+	</script>
+	
+</body>
+</html>

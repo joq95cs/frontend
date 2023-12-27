@@ -1,0 +1,27 @@
+@font-face {
+
+	font-family: "HindSiliguri";
+	src: url('fonts/HindSiliguri-Regular.ttf');
+}
+
+@font-face {
+
+	font-family: "HindSiliguri-Bold";
+	src: url('fonts/HindSiliguri-Bold.ttf');
+}
+
+@font-face {
+
+	font-family: "Yellowtail";
+	src: url('fonts/Yellowtail-Regular.ttf');
+}
+
+body {
+
+	font-family: 'Audiowide';
+}
+
+h1 {
+
+	font-weight: normal;
+}

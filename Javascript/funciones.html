@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+
+		function funcion(nombre, edad) { //Son similares a las funciones de PHP
+
+			document.write("Qué onda " + nombre + "?" + " Tienes " + edad + " años...");
+
+		}
+
+		function regresa(nombre, pelicula) {
+
+			return "Hola " + nombre + ", tu película favorita es " + pelicula + "...";
+
+		}
+
+		//funcion("Joqsan", 25);
+
+		//document.write(regresa("Joqsan", "Titanic"));
+
+		var anonima = function(nombre, pais) {
+
+			return "Hola " + nombre + ", tú naciste en " + pais;
+
+		};
+
+		//document.write(anonima("Joq", "México"));
+
+		(function(nombre, ciudad){
+
+			alert("Hola " + nombre + ", vives en " + ciudad);
+
+		}("Joqsan", "Uruapan")); //Se llama en la posición donde se define
+
+		//Funciones autoinvocadas
+		//Permite proteger coódigo de código de terceros, como cuando agregas un plugin de terceros
+
+	</script>
+
+</body>
+</html>

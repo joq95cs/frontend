@@ -1,0 +1,71 @@
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+
+	background: #f2f2f2;
+	font-family: Arial;
+
+}
+
+.contenedor {
+
+	width: 80%;
+	height: 500px;
+	max-width: 700px;
+	background: #212d40;
+
+	display:flex; /*Habilita flexbox*/
+	flex-direction: row;
+	flex-wrap: wrap; /*warp respeta el tamaño del contenedor padre, nowrap adapta al tamaño*/
+
+	/*flex-flow: row wrap*/
+
+	justify-content: space-between; /*Los pone a la derecha o a la izquierda del contenedor*/
+
+	/*align-items: baseline; /*Alinea de acuerdo al tamaño de la fuente*/
+
+	align-content: center;
+
+}
+
+.caja {
+
+	width: 150px;
+	height: 100px;
+	background: #f29256;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	font-size: 40px;
+	color: #fff;
+	/*order: 1;*/
+
+	/*flex-grow: 1; /*Abarca todo el tamaño necesario*/
+
+	flex: 1 1 auto; /*Suele ser el valor por defecto*/
+
+}
+
+/*.dos {
+
+	flex-shrink: 0; /*No permite ser más pequeño que su width
+	/*width: 200px;
+
+	flex-basis: 200px; /*Tamaño inicial de un elemento, igual que width
+
+	flex-grow: 2; /*Por cada pixel que crezcan las otras cajas, dos crece 2 pixeles
+
+	/*flex: 1 auto;
+}*/
+
+.dos {
+
+	align-self: stretch;
+	height: auto;
+}

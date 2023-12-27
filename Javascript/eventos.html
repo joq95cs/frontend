@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		
+		.caja {
+
+			width: 200px;
+			height: 200px;
+			cursor: pointer;
+			background: #226fc1;
+			margin: 10px;
+			display: inline-block;
+			text-align: center;
+			font-size: 30px;
+			color: #fff;
+			font-family: Arial;
+
+		}
+	</style>
+</head>
+<body>
+
+	<!--<button onclick="saludo()">Saludo</button> <!--Modelo básico-->
+	<!--Se usa principalmente para pruebas-->
+
+	<!--<button id="btn_saludar">Saludo</button>-->
+
+	<button id="btn_caja">Crear caja</button>	
+	<section id="contenedor"></section>
+
+	<script>
+
+		/*Existen 3 modelos de eventos diferentes:
+
+		-Modelo básico de eventos
+			Características límitadas
+			Funciona en todos los navegadores
+
+		-Modelo de eventos estándar
+			Podemos hacer más cosas
+			Todos los navegadores los soportan
+			Es el que se usa actualmente siempre
+
+		-Modelo de eventos de Internet Explorer
+			Modelo creado por Microsoft solo para IE
+			Te obligaba a programar dos veces cada evento
+
+		*/
+
+		/*function saludo() {
+
+			alert("Hola a todos");
+		}
+
+		function despedida() {
+
+			alert("Adiós a todos");
+		}
+
+		var btn_saludar = document.getElementById("btn_saludar");
+		btn_saludar.addEventListener("click", saludo); //También puede ser una función anónima
+		btn_saludar.addEventListener("click", despedida); //Acepta varios listeners
+
+		btn_saludar.removeEventListener("click", despedida);
+
+		*/
+
+		function crearCaja() {
+
+			var contenedor = document.getElementById("contenedor");
+			var caja = document.createElement("div");
+
+			caja.className = "caja";
+			contenedor.appendChild(caja);
+
+		}
+
+		var btn_caja = document.getElementById("btn_caja");
+		btn_caja.addEventListener("click", crearCaja);
+
+		/*Algunos eventos comunes:
+
+			click
+			focus
+			blur
+			change
+			onload
+			mouseover
+			mouseout
+			resize
+			submit
+
+		*/
+
+
+	</script>
+	
+</body>
+</html>

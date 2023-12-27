@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+
+        .joq-nav {
+
+            color: white;
+            padding: 15px;
+        }
+
+        .joq-nav .disabled {
+
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .joq-nav a:hover {
+
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 mt-4">
+
+                <h3>Menú con UL</h3>
+                <hr>
+
+                <ul class="nav">
+
+                    <li class="nav-item active">
+
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="#" class="nav-link disabled">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 mt-4">
+
+                <h3>Menú con estilos CSS</h3>
+                <hr>
+
+                <ul class="joq-nav nav bg-dark">
+
+                    <li class="nav-item active">
+
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="#" class="nav-link disabled">Acerca de</a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 mt-4">
+
+                <h3>Menú con nav</h3>
+                <hr>
+
+                <nav class="nav">
+
+                    <a href="#" class="nav-link">Inicio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                </nav>
+            </div>
+
+            <div class="col-12 mt-4">
+
+                <h3>Alineando con flexbox</h3>
+                <hr>
+
+                <nav class="nav justify-content-center">
+
+                    <a href="#" class="nav-link">Inicio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                </nav>
+            </div>
+
+            <div class="col-12 mt-4">
+
+                <h3>Menú vertical</h3>
+                <hr>
+
+                <nav class="nav flex-column bg-dark joq-nav">
+
+                    <a href="#" class="nav-link">Inicio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

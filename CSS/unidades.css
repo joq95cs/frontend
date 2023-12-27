@@ -1,0 +1,32 @@
+body {
+
+	font-size: 20px;
+
+}
+
+p {
+
+	font-size: 1em;
+
+}
+
+.padre {
+
+	font-size: 1.5em;
+
+}
+
+
+.hijo {
+
+	background: #000;
+	width: 20em;
+	height: 10em;
+	color: #fff;
+}
+
+/*em toma el valor del elemento padre o el más cercano
+  rem toma el valor del body
+
+/*
+

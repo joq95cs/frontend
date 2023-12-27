@@ -1,0 +1,54 @@
+* {
+
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box; /*Valor todal con el paddin o margin*/
+}
+
+body {
+
+	background: #f2f2f2;
+	font-family: Arial, sans-serif;
+}
+
+.contenedor {
+
+	width: 1000px;
+	background: #ccc;
+	margin: 20px auto;
+}
+
+header {
+
+	background: #30323d;
+	color: #fff;
+	padding: 20px;
+}
+
+.main {
+
+	background: #fff;
+	padding: 20px;
+	width: 700px;
+	float: left;
+}
+
+aside {
+
+	background: #e8c547;
+	color: #fff;
+	padding: 20px;
+	width: 300px;
+	float: left;
+}
+
+footer {
+
+	clear: both;
+	background: #4d5061;
+	padding: 20px;
+	color: #fff;
+}
+
+/*Para tener un elemento al lado del otro (cajas), a los dos se les pone float:left, al elemento de abajo del 100 por ciento se le pone
+clear: both, y debemos asegurarnos de que las medidas coincida*/

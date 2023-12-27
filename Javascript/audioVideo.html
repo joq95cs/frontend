@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <video id="video" src="media/video.3gp" width="500" controls></video>
+    <br>
+
+    <audio src="media/audio.mp3" id="audio" controls>
+
+        <p>Tu navegador no soporta audios en HTML, por favor actualízalo...</p>
+    </audio>
+    <br>
+
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+
+    <input type="range" id="volumen" min="0" max="1" step="0.1">
+
+    <script>
+
+        var audio = document.getElementById("audio"),
+            btnPlay = document.getElementById("play"),
+            btnPause = document.getElementById("pause"),
+            volumen = document.getElementById("volumen");
+
+        btnPlay.addEventListener("click", function() {
+
+            audio.play();
+            //document.body.style.background = "#000";
+
+        });
+
+        btnPause.addEventListener("click", function() {
+
+            audio.pause();
+        });
+
+        volumen.addEventListener("change", function() {
+
+            audio.volume = volumen.value;
+        });
+
+        /*
+            currentTime
+            duration
+            ended
+        */
+
+        /*
+
+            pause()
+            play()
+
+        */
+
+    </script>
+</body>
+</html>

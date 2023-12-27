@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*@mixin colores($fondo, $articulo) { //Son prácticamente funciones
+
+    body {
+
+        background: $fondo;
+    }
+
+    .articulo {
+
+        background: $articulo;
+    }
+}
+
+@include colores(#ff8000, #fff);
+
+*/
+article {
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-boder-radius: 20px;
+  -o-border-radius: 20px;
+  background: rgba(255, 128, 0, 0.5); }
+
+/*# sourceMappingURL=mixin.css.map */

@@ -1,0 +1,29 @@
+body {
+
+	/*background: #2CBEB6;*/
+
+	/*
+	background: url(img/paisaje.jpg);
+	background-repeat: no-repeat; /*repeat-x, repeat-y
+	background-size: contain; /*cover abarca el 100%
+	background-attachment: fixed;
+	background-position: center center;
+
+	*/
+
+	/*background: url(img/paisaje.jpg) no-repeat fixed center center;
+	background-size: 500px;*/
+
+	background: url(img/textura.png) repeat scroll;
+
+}
+
+/*.fondo {
+
+	width: 600px;
+	height: 600px;
+	background: url("img/paisaje.jpg") black;
+	background-repeat: no-repeat;
+	background-size: 50% 90%;
+
+}*/

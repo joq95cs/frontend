@@ -1,0 +1,29 @@
+//Esta es la sintáxis más nueva de SASS
+
+body {
+
+    background: #f2f2f2;
+}
+
+.articulo {
+
+    background: white;
+
+    .titulo {
+
+        color: black;
+    }
+
+    .autor {
+
+        color: red;
+    }
+
+    p {
+
+        a {
+
+            text-decoration: none;
+        }
+    }
+}

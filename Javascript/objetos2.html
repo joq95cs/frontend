@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //OBJETOS DINÁMICOS Y ANÓNIMOS
+
+        var pelicula = {
+
+            nombre: "Avengers: Endgame",
+            genero: "Superhéroes",
+            agno: 2019,
+            resumen: function() {
+
+                return this.nombre + " es una película del género " + this.genero + ", estrenada en el año " + this.agno;
+            }
+        };
+
+        var alumno = {
+
+            nombre: "Joqsan",
+            escribe: function(carrera, escuela) {
+
+                return this.nombre + " estudia " + carrera + " en " + escuela; 
+            }
+        }
+
+        //document.write(alumno.escribe("ISC", "Tec Uruapan"));
+
+        //OBJETOS CON FUNCIÓN CONSTRUCTORA (SIMILAR A CLASES)
+
+        function Videojuego(nombre, genero, ordenar) {
+
+            this.nombre = nombre;
+            this.genero = genero;
+
+            this.clasificacion = "13+";
+
+            this.ejecutar = function() {
+
+                return "El videojuego ha sido ejecutado";
+            };
+
+            this.ordenar = ordenar;
+
+        }
+
+        var vid1 = new Videojuego("Los Sims 4", "Simulación", function() {
+
+            return "Ordenada";
+        });
+
+        var f_ordenar = function ordenar() {
+
+            return "Ordenada externa";
+        }
+
+        var vid2 = new Videojuego("SimCity 4", "Simulación", f_ordenar);
+        //document.write(vid2.ordenar());
+
+        //MEZCLA DE LOS DOS MÉTODOS ANTERIORES
+
+        var constructores = { //El objeto dinámico constructores tiene en su interior funciones constructoras para definir objetos
+
+            persona: function(nombre, apellido) {
+
+                this.nombre = nombre;
+                this.apellido = apellido;
+            },
+
+            videojuego: function(nombre, genero, ordenar) {
+
+                this.nombre = nombre;
+                this.genero = genero;
+
+                this.clasificacion = "13+";
+
+                this.ejecutar = function() {
+
+                    return "El videojuego ha sido ejecutado";
+                }
+
+                this.ordenar = ordenar;
+
+            }
+
+        };
+
+        var p1 = new constructores.persona("Joqsan", "Castellanos");
+        var v1 = new constructores.videojuego("Los Sims 2", "Simulación", f_ordenar);
+
+        //document.write(v1.ejecutar());
+
+        function Alumno(nombre, edad) {
+
+            this.nombre = nombre;
+            this.edad = edad;
+
+            this.escuela = {
+
+                nombre: "Tec Uruapan",
+                ciudad: "Uruapan",
+                maestro: function(nombre, materia) {
+
+                    this.nombre = nombre;
+                    this.materia = materia;
+
+                }
+            }
+        }
+
+        var al1 = new Alumno("Joqsan", 25);
+        var m1 = new al1.escuela.maestro("Mélica", "Programación");
+        //document.write(m1.nombre);
+
+        document.write(new (new Alumno(null, null).escuela).maestro("Nezy", "Matemáticas").nombre);
+
+    </script>
+    
+</body>
+</html>
